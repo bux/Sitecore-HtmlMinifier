@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package>
+    <metadata>
+        <id>Bx.Sitecore-HtmlMinifier</id>
+        <version>1.911.0</version>
+        <title>Sitecore-HtmlMinifier</title>
+        <authors>Jo David</authors>
+        <owners>Jo David</owners>
+        <license type="expression">MIT</license>
+        <requireLicenseAcceptance>false</requireLicenseAcceptance>
+        <description>A cacheable Sitecore HTML Minifier pipeline</description>
+		<projectUrl>https://github.com/bux/Sitecore-HtmlMinifier</projectUrl>
+		<tags>Sitecore</tags>
+        <dependencies>
+            <group targetFramework=".NETFramework4.7.1" >
+                <dependency id="Sitecore.Kernel" version="9.1.1" />
+                <dependency id="Sitecore.Mvc" version="9.1.1" />
+           </group>
+        </dependencies>
+    </metadata>
+    <files>
+       <file src="config\Bx.HtmlMinifier.config" target="App_Config\Include\zzz\" />
+       <file src="config\Bx.HtmlMinifier.Settings.config" target="App_Config\Include\zzz\" />
+       <file src="dist\lib\HtmlMinifier.dll" target="lib\net471" />
+    </files>
+</package>
