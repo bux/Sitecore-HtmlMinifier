@@ -2,7 +2,7 @@
 <package>
     <metadata>
         <id>Bx.Sitecore-HtmlMinifier</id>
-        <version>1.911.0</version>
+        <version>1.911.1</version>
         <title>Sitecore-HtmlMinifier</title>
         <authors>Jo David</authors>
         <owners>Jo David</owners>
@@ -17,10 +17,13 @@
                 <dependency id="Sitecore.Mvc" version="9.1.1" />
            </group>
         </dependencies>
+        <contentFiles>
+            <files include="config\**" buildAction="Content" />
+        </contentFiles>
     </metadata>
     <files>
-       <file src="config\Bx.HtmlMinifier.config" target="App_Config\Include\zzz\" />
-       <file src="config\Bx.HtmlMinifier.Settings.config" target="App_Config\Include\zzz\" />
-       <file src="dist\lib\HtmlMinifier.dll" target="lib\net471" />
+       <file src="config\**" target="contentFiles\App_Config\Include\zzz\" />
+       <file src="config\**" target="content\App_Config\Include\zzz\" />
+       <file src="src\HtmlMinifier\bin\Release\HtmlMinifier.dll" target="lib\net471" />
     </files>
 </package>
