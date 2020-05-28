@@ -2,7 +2,7 @@
 <package>
     <metadata>
         <id>Bx.Sitecore-HtmlMinifier</id>
-        <version>1.911.2</version>
+        <version>1.911.3</version>
         <title>Sitecore-HtmlMinifier</title>
         <authors>Jo David</authors>
         <owners>Jo David</owners>
@@ -24,6 +24,6 @@
     <files>
        <file src="config\**" target="contentFiles\App_Config\Include\zzz\" />
        <file src="config\**" target="content\App_Config\Include\zzz\" />
-       <file src="src\HtmlMinifier\bin\Release\HtmlMinifier.dll" target="lib\net471" />
+       <file src="src\HtmlMinifier\bin\Release\Bx.HtmlMinifier.dll" target="lib\net471" />
     </files>
 </package>
