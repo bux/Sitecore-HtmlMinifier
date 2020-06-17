@@ -9,13 +9,9 @@ namespace Bx.HtmlMinifier.Services
         {
             var beginWhitespaceRegex = new Regex("^\\s*", RegexOptions.Compiled | RegexOptions.Multiline);
             var doubleWhitespaceRegex = new Regex("\\s\\s", RegexOptions.Compiled | RegexOptions.Multiline);
-            var beforeTagWhitespaceRegex = new Regex("\\s+<", RegexOptions.Compiled | RegexOptions.Multiline);
-            var afterTagWhitespaceRegex = new Regex(">\\s+", RegexOptions.Compiled | RegexOptions.Multiline);
 
             input = beginWhitespaceRegex.Replace(input, string.Empty);
             input = doubleWhitespaceRegex.Replace(input, " ");
-            input = beforeTagWhitespaceRegex.Replace(input, "<");
-            input = afterTagWhitespaceRegex.Replace(input, ">");
 
             return input;
         }
